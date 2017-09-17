@@ -1,0 +1,20 @@
+﻿<Window x:Class="Aggregate.FSA"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aggregate"
+        mc:Ignorable="d"
+        Title="Метод отжига" Height="482.671" Width="1050.404" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas x:Name="g" HorizontalAlignment="Center" Height="400" Margin="0,10,0,0" VerticalAlignment="Top" Width="1000" Background="#FFD7E9EA"/>
+        <Button Content="Начать оптимизацию" HorizontalAlignment="Left" Margin="863,416,0,0" VerticalAlignment="Top" Width="149" Click="cmRun"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" Margin="142,414,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Текущая температура:" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top"/>
+        <Label Content="Значение функции:" HorizontalAlignment="Left" Margin="293,410,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.153,-0.575"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="23" Margin="415,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <Label Content="Текущее значение:" HorizontalAlignment="Left" Margin="578,411,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" Margin="697,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161"/>
+
+    </Grid>
+</Window>

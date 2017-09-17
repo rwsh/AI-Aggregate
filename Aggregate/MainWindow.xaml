@@ -1,0 +1,15 @@
+﻿<Window x:Class="Aggregate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aggregate"
+        mc:Ignorable="d"
+        Title="Агрегатор методов AI + ML" Height="358" Width="537" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Метод отжига - минимизация" HorizontalAlignment="Center" Margin="0,10,7,0" VerticalAlignment="Top" Width="500" Click="cmSA"/>
+        <Button Content="Выход" HorizontalAlignment="Center" Margin="0,289,7,0" VerticalAlignment="Top" Width="500" Click="cmClose"/>
+        <Button Content="Метод отжига - задача ферзей" HorizontalAlignment="Center" Margin="0,35,7,0" VerticalAlignment="Top" Width="500" Click="cmSA2"/>
+
+    </Grid>
+</Window>
