@@ -55,7 +55,7 @@ namespace Aggregate
 
             DrawQueens();
 
-            SA = new TSA(SolQueen, 100, 0.98);
+            SA = new TSA(SolQueen, 100, 0.95);
 
             SA.T = 50;
 
@@ -84,6 +84,8 @@ namespace Aggregate
             if (SA.T < 1e-9)
             {
                 Timer.Stop();
+
+                Loose();
             }
 
             SA.Run();
@@ -109,6 +111,16 @@ namespace Aggregate
             for (int n = 0; n < N; n++)
             {
                 Q[n].Fill = Brushes.Red;
+            }
+        }
+
+        void Loose()
+        {
+            lb.Content = "Решение не найдено";
+
+            for (int n = 0; n < N; n++)
+            {
+                Q[n].Fill = Brushes.Gray;
             }
         }
 
