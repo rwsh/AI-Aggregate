@@ -55,7 +55,7 @@ namespace Aggregate
 
             DrawQueens();
 
-            SA = new TSA(SolQueen, 100, 0.95);
+            SA = new TSA(SolQueen, 100, 0.98);
 
             SA.T = 50;
 

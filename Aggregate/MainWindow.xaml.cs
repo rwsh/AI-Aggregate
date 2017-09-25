@@ -45,5 +45,19 @@ namespace Aggregate
 
             SAQueen.Show();
         }
+
+        private void cmRoy(object sender, RoutedEventArgs e)
+        {
+            FRoy Roy = new FRoy();
+
+            Roy.Show();
+        }
+
+        private void cmRoyDE(object sender, RoutedEventArgs e)
+        {
+            FRoyDE RoyDE = new FRoyDE();
+
+            RoyDE.Show();
+        }
     }
 }

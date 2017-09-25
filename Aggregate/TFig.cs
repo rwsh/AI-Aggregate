@@ -23,13 +23,18 @@ namespace Aggregate
 
         public TData XY;
 
-        public TFig(Canvas g)
+        public TFig(Canvas g, double R = 1, bool IsLine = false)
         {
             this.g = g;
+            this.R = R;
+            this.IsLine = IsLine;
+
             XY = new TData();
         }
 
         public double R = 1;
+
+        bool IsLine;
 
         public void AddY(double y)
         {
@@ -53,16 +58,37 @@ namespace Aggregate
                 br = Brushes.Blue;
             }
 
-
-            for (int i = 0; i < XY.N; i++)
+            if (IsLine)
             {
-                Ellipse O = new Ellipse();
-                O.Width = R * 1; // !
-                O.Height = R * 1; // !
-                O.Margin = new Thickness(x(XY.X[i]) - R, y(XY.Y[i]) - R, 0, 0);
-                O.Fill = br;
-                g.Children.Add(O);
+                for (int i = 1; i < XY.N; i++)
+                {
+                    Line line = new Line();
+
+                    line.X1 = x(XY.X[i - 1]);
+                    line.Y1 = y(XY.Y[i - 1]);
+
+                    line.X2 = x(XY.X[i]);
+                    line.Y2 = y(XY.Y[i]);
+
+                    line.Stroke = br;
+                    line.StrokeThickness = R;
+
+                    g.Children.Add(line);
+                }
             }
+            else
+            {
+                for (int i = 0; i < XY.N; i++)
+                {
+                    Ellipse O = new Ellipse();
+                    O.Width = R * 1; // !
+                    O.Height = R * 1; // !
+                    O.Margin = new Thickness(x(XY.X[i]) - R, y(XY.Y[i]) - R, 0, 0);
+                    O.Fill = br;
+                    g.Children.Add(O);
+                }
+            }
+
         }
 
         public double x(double x0)

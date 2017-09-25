@@ -10,6 +10,8 @@
         <Button Content="Метод отжига - минимизация" HorizontalAlignment="Center" Margin="0,10,7,0" VerticalAlignment="Top" Width="500" Click="cmSA"/>
         <Button Content="Выход" HorizontalAlignment="Center" Margin="0,289,7,0" VerticalAlignment="Top" Width="500" Click="cmClose"/>
         <Button Content="Метод отжига - задача ферзей" HorizontalAlignment="Center" Margin="0,35,7,0" VerticalAlignment="Top" Width="500" Click="cmSA2"/>
+        <Button Content="Метод роения частиц - функция Розенброка" HorizontalAlignment="Center" Margin="0,60,7,0" VerticalAlignment="Top" Width="500" Click="cmRoy"/>
+        <Button Content="Метод роения частиц - дифференциальные уравнения" HorizontalAlignment="Center" Margin="0,85,7,0" VerticalAlignment="Top" Width="500" Click="cmRoyDE"/>
 
     </Grid>
 </Window>
