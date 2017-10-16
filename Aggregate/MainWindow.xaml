@@ -12,6 +12,8 @@
         <Button Content="Метод отжига - задача ферзей" HorizontalAlignment="Center" Margin="0,35,7,0" VerticalAlignment="Top" Width="500" Click="cmSA2"/>
         <Button Content="Метод роения частиц - функция Розенброка" HorizontalAlignment="Center" Margin="0,60,7,0" VerticalAlignment="Top" Width="500" Click="cmRoy"/>
         <Button Content="Метод роения частиц - дифференциальные уравнения" HorizontalAlignment="Center" Margin="0,85,7,0" VerticalAlignment="Top" Width="500" Click="cmRoyDE"/>
+        <Button Content="Генетический алгоритм" HorizontalAlignment="Center" Margin="0,110,7,0" VerticalAlignment="Top" Width="500" Click="cmGA"/>
+        <Button Content="Нейронная сеть" HorizontalAlignment="Center" Margin="0,135,7,0" VerticalAlignment="Top" Width="500" Click="cmANN"/>
 
     </Grid>
 </Window>

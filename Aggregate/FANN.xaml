@@ -1,0 +1,25 @@
+﻿<Window x:Class="Aggregate.FANN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aggregate"
+        mc:Ignorable="d"
+        Title="Нейронная сеть" Height="357" Width="567" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas x:Name="g" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="300" Background="#FFCDF1E9"/>
+        <Button Content="Очистка поля" HorizontalAlignment="Left" Margin="315,10,0,0" VerticalAlignment="Top" Width="230" Click="cmClearPole"/>
+        <Button Content="Добавить образ" HorizontalAlignment="Left" Margin="315,60,0,0" VerticalAlignment="Top" Width="165" Click="cmAdd"/>
+        <Button Content="Показать образы" HorizontalAlignment="Left" Margin="315,85,0,0" VerticalAlignment="Top" Width="230" Click="cmShow"/>
+        <Button Content="Очистка образов" HorizontalAlignment="Left" Margin="315,35,0,0" VerticalAlignment="Top" Width="230" Click="cmClearBoxes"/>
+        <Label Content="Количество клеток:" HorizontalAlignment="Left" Margin="332,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.684,-1.269"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="23" Margin="454,125,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Размер скрытого слоя:" HorizontalAlignment="Left" Margin="310,153,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="23" Margin="454,157,0,0" TextWrapping="Wrap" Text="32" VerticalAlignment="Top" Width="91"/>
+        <Button Content="Настроить параметры" HorizontalAlignment="Left" Margin="315,185,0,0" VerticalAlignment="Top" Width="230" Click="cmInit"/>
+        <Button Content="Учить сеть" HorizontalAlignment="Left" Margin="315,210,0,0" VerticalAlignment="Top" Width="230" Click="cmLearn"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" Margin="485,60,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="Распознать образ" HorizontalAlignment="Left" Margin="315,235,0,0" VerticalAlignment="Top" Width="230" Click="cmFind"/>
+
+    </Grid>
+</Window>

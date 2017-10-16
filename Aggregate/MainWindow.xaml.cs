@@ -59,5 +59,19 @@ namespace Aggregate
 
             RoyDE.Show();
         }
+
+        private void cmGA(object sender, RoutedEventArgs e)
+        {
+            FGA GA = new FGA();
+
+            GA.Show();
+        }
+
+        private void cmANN(object sender, RoutedEventArgs e)
+        {
+            FANN ANN = new FANN();
+
+            ANN.Show();
+        }
     }
 }

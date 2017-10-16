@@ -58,6 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FANN.xaml.cs">
+      <DependentUpon>FANN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FGA.xaml.cs">
+      <DependentUpon>FGA.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FRoy.xaml.cs">
       <DependentUpon>FRoy.xaml</DependentUpon>
     </Compile>
@@ -70,12 +76,24 @@
     <Compile Include="FSAQueen.xaml.cs">
       <DependentUpon>FSAQueen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TANN.cs" />
+    <Compile Include="TANNPole.cs" />
     <Compile Include="TCalc.cs" />
     <Compile Include="TFig.cs" />
+    <Compile Include="TGA.cs" />
+    <Compile Include="TGACases.cs" />
     <Compile Include="TRoy.cs" />
     <Compile Include="TRoyCase.cs" />
     <Compile Include="TRoyPole.cs" />
     <Compile Include="TSA.cs" />
+    <Page Include="FANN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FGA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FRoy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

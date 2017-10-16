@@ -37,7 +37,7 @@ namespace Aggregate
 
         public double f(double x)
         {
-            return -x;
+            return x;
         }
 
         public override double F(TX X)
